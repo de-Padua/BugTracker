@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jost&family=Limelight&family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Righteous&family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Titillium+Web&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-bg-color: #cecece;
+  --color-font: rgb(30, 37, 59);
+  --secundary-color: #dedde0;
+}
+body {
+  background-color: #dfdbdb36;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.list-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+  margin-right: 10em;
+}
+.list-links li {
+  list-style: none;
+}
+.list-links a {
+  color: rgb(46, 46, 46);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+.createAccountButton {
+  list-style: none;
+}
+.createAccountButton > a {
+  padding: 10px 50px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  color: rgb(254, 254, 254);
+  background-color: rgb(40, 126, 201);
+
+  border-radius: 10px;
+}
+.center-home-div-main {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-login {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 254);
+}
+.form-login div {
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-login input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(209, 206, 206);
+  margin-top: 1.4em;
+}
+.input:focus-within {
+  border-bottom: 1px solid rgb(67, 67, 67);
+}
+.form-login button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  padding: 10px 50px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  background-color: rgb(40, 126, 201);
+  color: rgb(243, 243, 243);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.create-account a {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.svg-container {
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svg-container h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.change-info-block {
+  display: none;
+}
+.home-container-main {
+  display: flex;
+  justify-content: safe;
+  width: 100%;
+  
+}
+
+/*--------------------NAVBAR STYLES----------------------*/
+.navbar-main-container {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-bg-color);
+  display: flex;
+  width: 250px;
+  height: 100vh;
+  position: sticky;top: 0px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo-container {
+  width: 100%;
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--secundary-color);
+}
+.logo-container svg {
+  display: flex;
+  width: 250px;
+}
+.top-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.links-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-link-style {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.user-profile-container-navbar {
+  margin-bottom: 2rem;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-style {
+  padding-left: 2em;
+  background-color: var(--secundary-color);
+  font-size: 0.9rem;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+
+  width: 70%;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-font);
+  transition: all 0.15s ease;
+}
+.link-style:hover {
+  margin-left: 30px;
+}
+.icon-menu {
+  font-size: 1.7rem;
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.routes-container {
+  padding: 50px;
+  width: 80%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+/*-------FEED STYLES-------*/
+
+.issues {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 90%;
+}
+
+.container-issue-style h2 {
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: rgb(29, 29, 29);
+}
+.container-issue-style {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all-open-name {
+  color: var(--secundary-color);
+}
+.button-svg-inside {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  padding-left: 2em;
+  background-color: #22BA8E;
+  font-size: 0.9rem;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-font);
+  transition: all 0.15s ease;
+  border: none;
+  cursor: pointer;
+}
+.button-svg-inside svg {
+  padding-right: 1em;
+}
+.issue-body{
+  padding-inline: 1em;
+
+  display: flex;
+  justify-content: space-between;
+}
+.bd-txt-1{
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid gainsboro;
+  
+}
+.issue-body div{
+  width: 15%;
+}
+.issue-body-body{
+  display: flex;
+  justify-content: space-between;
+}
+.issue-body-body div{
+  width: 15%;
+  text-align: start;
+  background-color: red;
+}
+.High{
+  cursor: pointer;
+   background-color: #ba5f22;
+   color: white;
+   width: fit-content;
+   padding-inline: 1em;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   border-radius: 10px;
+   font-size: .8rem;
+
+}
+.Immediate{
+  cursor: pointer;
+
+  background-color: #ba2222;
+  color: white;
+  font-size: .8rem;
+
+  width: fit-content;
+  padding-inline: 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+.Normal{
+  cursor: pointer;
+  font-size: .8rem;
+  background-color: #22BA8E;
+  color: white;
+  width: fit-content;
+  padding-inline: 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+/* NEW ISSUE */ 
+
+.top-div-new-issue{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.new-issue-container{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  
+  width: 90%;
+}
+.down-div-issues{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.text-area-test{
+padding: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 150px;
+border: none;
+border-bottom: 1px solid gainsboro;
+outline: none;
+
+}
+.text-type{
+padding: 4px;
+border: none;
+border-bottom: 1px solid gainsboro;
+outline: none;
+}
+.new-issue-container p{
+  font-size: .9rem;
+}
+
+
+.btn-delete{
+  
+  position: relative;
+  top: -50px;
+  right: -90%;
+  border: none;
+  color: white;
+  background-color: rgb(158, 20, 78);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+}
+.no-issues-found{
+  display: flex;  
+  flex-direction: column; 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton-name-issue{
+  display: flex;
+}
+.skeleton-name-issue :nth-last-child(){
+  padding-left: 1em;
+}
+.skeleton-animation{
+  border: none;
+  opacity: .8;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(236, 234, 234);
+}
+.skeleton-animation{
+  border-radius: 10px;
+  animation: skeleton-animation .7s linear infinite alternate;
+}
+.skeleton-name{
+  width: 80px;
+  opacity: .8;
+
+  height: 20px;
+  border-radius: 10px;
+  animation: skeleton-animation-name 1s linear infinite alternate;
+
+}
+.skeleton-name-1{
+  opacity: .8;
+
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  animation: skeleton-animation-name 1s linear infinite alternate;
+
+}
+.skeleton-name-2{
+  opacity: .8;
+ padding-left: .2em;
+ position: relative;
+ left: 10px;
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  animation: skeleton-animation-name 1s linear infinite alternate;
+
+}
+
+@keyframes skeleton-animation {
+  0%{
+    background-color: hsla(199, 20%, 70%, 0.733);
+  }
+ 100%{
+    background-color: hsl(197, 37%, 93%);
+  }
+}
+@keyframes skeleton-animation-name {
+  0%{
+    background-color: hsl(200, 10%, 94%);
+  }
+ 100%{
+    background-color: hsl(196, 37%, 76%);
+  }
+}
+.buttons-div-issue{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+/* ============================ COMMENT BLOCK=====================================*/
+
+.coment-block{
+  background-color: rgba(165, 165, 165, 0.199);
+  box-shadow: rgba(0, 0, 0, 0.164) 0px 5px 15px;
+  margin: 1em;
+  margin-inline: 0;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.user-description{
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.user-description img{
+  padding-top: .4em;
+  width: 40px;
+  margin: 0;
+  
+  height: 100%;
+}
+.user-description div{
+  padding-right: 1em;
+}
+.block-of-coment{
+  width: 90%;
+  background-color: rgba(165, 165, 165, 0.199);
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: .2em;
+  border: none;
+  outline-color: none;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.user-name{
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.role-2{
+  background-color: rgba(29, 177, 172, 0.281);
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 7px;
+  border-radius: 10px;
+  color: white;
+}
+.comment-button{
+  background-color: var(--secundary-color);
+  color: rgb(255, 255, 255);
+}
+.coment{
+  margin-left: 4em;
+  font-weight: 100;
+  width: 90%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.button-teste{
+  position: relative;
+  background-color: #db3a72;
+  color: white;
+  border: none;
+  outline: none;
+  padding-inline: 1em;
+  padding-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.closed-issue-text{
+  color: gainsboro;
+}
+
+/*-------- FEED ITEMS----------*/ 
+.feed-container{
+  height: 80vh;
+  width: 60%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.feed-item{
+  width: 90%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.301);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  cursor: pointer;
+
+}
+.feed-item div{
+  width: 50%;
+  padding: 10px;
+}
+.feed-item-create{
+  border-left: 10px solid #84e0c6;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  cursor: pointer;
+}
+.feed-item-comment{
+  border-left: 10px solid #1bb3c7;
+}
+.feed-item-closed{
+  border-left: 10px solid #e792bc;
+
+}
+.parg{
+  padding-left: 2em;
+}
+.user-page{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
