@@ -11,7 +11,10 @@ This project is a bug-tracker for teams to use in a daily basis,this project its
 
 https://flashbugtracker.netlify.app/
 
+demo account : 
 
+email > user@email.com  
+password > user123
 
 
 #### Details
