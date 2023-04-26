@@ -3,7 +3,8 @@
 
 ### About
 
-This project is a bug-tracker for teams to use in a daily basis,this project its mean to be used in a private server of any company who wants it,but for sake of "demo"the project is open-source now and anyone can register and use it.
+
+This project is designed to be a bug-tracking tool for teams to use on a daily basis. It is intended to be used on a private server by any company that desires it. However, for demonstration purposes, the project is now open-source, and anyone can register and use it.
 
 
 
