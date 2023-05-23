@@ -1,35 +1,42 @@
-# Bugtracker - FLASH
+# Level up - social media app
 
 
 ### About
 
 
-This project is designed to be a bug-tracking tool for teams to use on a daily basis. It is intended to be used on a private server by any company that desires it. However, for demonstration purposes, the project is now open-source, and anyone can register and use it.
-
+Level up is a social-media app that allow users to share game status and game reviews with others users,users also can make they own list of favorite games and completed games,future updates will allow users to follow another users and allow direct messages.
 
 
 ##Live demo 
 
-https://flashbugtracker.netlify.app/
-
+[https://flashbugtracker.netlify.app/
+](https://levelup-socialmedia.netlify.app/)
 demo account : 
 
 email > user@email.com  
-password > user123
+password > useruser123@
 
 
 #### Details
 
 
-Flash uses firebase to store data and information and react in the front-end with some other small libraries.
-    
+Front-end :
+
+React
+Javascript
+Vanilla css
+
+Back-end:
+
+Firebase 
+
     
 
 ## How to use it
 
-### Login screen
+### Home-screen
 
-![Login screen](https://github.com/de-Padua/BugTracker/blob/main/how-to-use/login-screen.JPG?raw=true)
+![Home screen](https://github.com/de-Padua/levelup-social_media/blob/Main/level-up/home.JPG)
 
 
 
